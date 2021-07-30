@@ -1,32 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('build/css/frontend.css')}}">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Rentkit - Directory & Listings Bootstrap 5 Template.">
 
-    <link rel="stylesheet" href="{{asset('css/prism.css')}}"/>
 
-    <link rel="shortcut icon" type="image/png" href="{{asset('img/favicon.png')}}"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/apple-touch-icon.png')}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/favicon-32x32.png')}}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon-16x16.png')}}">
 
-    <title>{{isset($article) ? $article->heading : $globalConfigs->site_title}}</title>
 
-    <x-frontend.google-analytics/>
+  <!-- Libs CSS -->
 
-    @livewireStyles
+  <link href="{{asset('libs/magnific-popup/dist/magnific-popup.css')}}" rel="stylesheet" />
+  <link href="{{asset('libs/animate.css/animate.min.css')}}" rel="stylesheet">
+  <link href="{{asset('libs/nouislider/distribute/nouislider.min.css')}}" rel="stylesheet">
+  <link href="{{asset('libs/uppy/dist/uppy.min.css')}}" rel="stylesheet">
+  <link href="{{asset('libs/litepicker/dist/css/litepicker.css')}}" rel="stylesheet">
+  <link href="{{asset('libs/bootstrap-icons/font/bootstrap-icons.css')}}" rel="stylesheet">
+
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="{{asset('css/theme.min.css')}}">
+  <title>{{isset($article) ? $article->heading : $globalConfigs->site_title}}</title>
+  <x-frontend.google-analytics/>
+
+  @livewireStyles
 
 </head>
-<body class="bg-gray-100">
-<div class="border-b border-blue-200 mb-3">
 
-    <div class="mx-6 sm:mx-20 md:mx-32 lg:mx-56 px-1 sm:px-10 md:px-16 lg:px-16 xl:px-32">
-        <x-frontend.navbar/>
-    </div>
-
-</div>
-
-
-<div class="mx-6 sm:mx-20 md:mx-32 lg:mx-56 px-1 sm:px-10 md:px-16 lg:px-16 xl:px-32 min-h-screen">
-
+<body>
+  <x-frontend.navbar/>

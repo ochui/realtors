@@ -8,13 +8,18 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
+    // public function index(Request $request)
+    // {
+    //     if (Auth::check()) {
+    //         $dashboard = new DashboardController();
+    //         return $dashboard->index();
+    //     } else {
+    //         return (new ArticleController())->index($request);
+    //     }
+    // }
+
     public function index(Request $request)
     {
-        if (Auth::check()) {
-            $dashboard = new DashboardController();
-            return $dashboard->index();
-        } else {
-            return (new ArticleController())->index($request);
-        }
+        return view("frontend.pages.index");
     }
 }
