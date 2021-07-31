@@ -32,4 +32,8 @@
 </head>
 
 <body>
-  <x-frontend.navbar/>
+  @if (request()->is('/') || request()->routeIs('get-article'))
+    <x-frontend.navbar :showShadow="false"/>  
+  @else
+    <x-frontend.navbar :showShadow="true"/>
+  @endif
