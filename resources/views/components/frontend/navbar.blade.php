@@ -23,9 +23,7 @@
                                                 <div class="dropdown-img-caption">
                                                     <h2 class="text-white mb-1">Get listed </h2>
                                                     <p class="mb-4">Take the perceived professionalism of your business to the next level and maximise your business's potential by joining us.</p>
-                                                    <a href="add-listing.html" class="btn btn-primary">
-                            Join Us
-                          </a>
+                                                    <a href="add-listing.html" class="btn btn-primary">Join Us </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -73,7 +71,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="blogDropdown">Our Blog</a>
+                                <a class="nav-link" href="{{ route('articles') }}">Our Blog</a>
                             </li>
                             
                         </ul>

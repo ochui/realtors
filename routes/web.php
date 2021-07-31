@@ -13,8 +13,8 @@ Route::get('unsubscribe', 'SubscriptionController@unsubscribe')->name('unsubscri
 Route::view('contact', 'frontend.contact.create')->name('contact');
 
 //Article
-Route::get('article', 'ArticleController@index')->name('articles');
-Route::get('article/{articleId}/{articleHeading?}', 'ArticleController@show')->name('get-article');
+Route::get('blog', 'ArticleController@index')->name('articles');
+Route::get('blog/{articleId}/{articleHeading?}', 'ArticleController@show')->name('get-article');
 Route::get('category/article/{categoryAlias}', 'CategoryController@getArticles')->name('articles-by-category');
 Route::get('keyword/article/{keywordName}', 'KeywordController@getArticles')->name('articles-by-keyword');
 Route::get('search', 'ArticleController@search')->name('search-article');
