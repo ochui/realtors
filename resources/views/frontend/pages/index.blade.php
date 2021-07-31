@@ -25,13 +25,9 @@
                                 </div>
                                 
                                 <div class="col-sm">
-                                    <select class="select2">
+                                    <select id="usa_state" class="select2">
                                         <option>Where?</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                        
                                     </select>
                                 </div>
                                 <div class="col-sm-1">
@@ -566,4 +562,30 @@
             </div>
         </div>
     </div>
+
+    @section('script')
+    <script>
+        var usa_state;
+        $.getJSON("db.json", function(json) {
+            usa_state = json;
+            // console.log(json); // this will show the info it in firebug console
+            
+            $.each(usa_state, function (state) {
+                var optgroup = "<optgroup label='"+state+"'>";
+                var cites = usa_state[state];
+
+                for (var i = 0; i < cites.length; i++) {
+                    city = cites[i];
+                    optgroup += "<option value='"+ state +"-"+ city + "'>" + city + "</option>"
+                }
+                optgroup += "</optgroup>";
+                $("#usa_state").append(optgroup);
+            });
+
+            $('#usa_state').select2({
+                width: '100%'
+            });
+        });
+    </script>
+    @endsection
 </x-frontend>

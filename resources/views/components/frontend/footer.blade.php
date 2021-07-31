@@ -104,5 +104,7 @@
     <!-- Theme JS -->
     <script src="{{asset('js/theme.min.js') }}"></script>
 
+    @yield('script')
+
 </body>
 </html>
