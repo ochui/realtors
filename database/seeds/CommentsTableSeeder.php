@@ -14,10 +14,11 @@ class CommentsTableSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker\Factory::create();
+        
 
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         if (app()->environment() != 'production') {
+            $faker = Faker\Factory::create();
             foreach (Article::all() as $article) {
                 Comment::factory()->count(3)->create([
                     'article_id' => $article->id,
