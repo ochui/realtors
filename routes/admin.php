@@ -38,6 +38,15 @@ Route::group(['middleware' => ['auth', 'role:owner|admin']], function () {
     Route::post('admin/category', 'CategoryController@store')->name('add-category');
     Route::get('admin/category/{categoryId}/delete', 'CategoryController@destroy')->name('delete-category');
 
+
+    //admin listing category
+    Route::get('admin/listing-category', 'ListingCategoryController@index')->name('listing-categories');
+    Route::get('admin/listing-category/toggle-active/{categoryId}', 'ListingCategoryController@toggleActive')
+        ->name('toggle-category-active');
+    Route::put('admin/listing-category/{categoryId}', 'ListingCategoryController@update')->name('update-listing-category');
+    Route::post('admin/listing-category', 'ListingCategoryController@store')->name('add-listing-category');
+    Route::get('admin/listing-category/{categoryId}/delete', 'ListingCategoryController@destroy')->name('delete-listing-category');
+
     //Admin users
     Route::get('admin/user', 'UserController@index')->name('users');
     Route::get('admin/user/{userId}/show', 'UserController@show')->name('get-user');

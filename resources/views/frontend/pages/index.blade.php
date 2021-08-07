@@ -14,30 +14,86 @@
                         </div>
 
                         <!-- form -->
-                        <div class="card border-0 p-2 search-form rounded-md-pill smooth-shadow-md  ">
+                        <div class="card border-0 p-2 search-form smooth-shadow-md  ">
                             <div class="row align-items-center">
-                                <div class="col-sm">
-                                    <select class="select2">
-                                        <option>What are you looking for?</option>
-                                        <option value="Inspector">An Inspector</option>
-                                        <option value="Appraiser">An Appraiser</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="col-sm">
-                                    <select id="usa_state" class="select2">
-                                        <option>Where?</option>
-                                        
-                                    </select>
-                                </div>
-                                <div class="col-sm-1">
-                                    <div class="d-md-flex justify-content-end ms-md-n3 ms-lg-0 text-end">
+                                <div class="container">
+                                    <div class="row row-cols-3 row-cols-lg-6 g-3 g-lg-3">
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Arizona</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">California</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Colorado</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Connecticut</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Delaware</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Florida</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Georgia</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Idaho</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Illinois</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Maryland</a></div>
+                                      </div>
 
-                                        <a href="#" class=" btn-primary rounded-circle icon-lg icon-shape"><i
-                                                class="fas fa-search"></i></a>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Massachusetts</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">New Jersey</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">New Mexico</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">New York</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">N. Carolina</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Ohio</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Oregon</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Pennsylvania</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav county-nav"><a href="arizona.html" class="">Tennessee</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav"><a href="arizona.html" class="">Texas</a></div>
+                                      </div>
 
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav"><a href="arizona.html" class="">Oregon</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav"><a href="arizona.html" class="">Pennsylvania</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav"><a href="arizona.html" class="">Tennessee</a></div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="d-flex justify-content-center county-nav"><a href="arizona.html" class="">Texas</a></div>
+                                      </div>
                                     </div>
-                                </div>
+                                  </div>
                             </div>
                         </div>
                     </div>

@@ -50167,3 +50167,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .text-reset {
     color: inherit
 }
+
+.county-nav {
+    background-color: #333;
+    text-align: center;
+    color: #ad9972;
+    border-radius: 6px;
+    box-shadow: 6px 9px 13px -2px rgba(0, 0, 0, 0.74);
+}
