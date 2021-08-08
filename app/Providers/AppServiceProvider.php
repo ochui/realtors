@@ -8,6 +8,7 @@ use App\Services\GeoIp\GeoIp;
 use App\Services\GeoIp\IpStack;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\View;
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -17,8 +18,12 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(UrlGenerator $url)
     {
+        if(env('APP_ENV') !== 'local')
+        {
+            $url->forceSchema('https');
+        }
         Paginator::useBootstrap();
     }
 
