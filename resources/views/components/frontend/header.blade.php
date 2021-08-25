@@ -24,6 +24,7 @@
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="{{asset('css/theme.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('css/map-style.css')}}" />
   <title>{{isset($article) ? $article->heading : $globalConfigs->site_title}}</title>
   <x-frontend.google-analytics/>
 

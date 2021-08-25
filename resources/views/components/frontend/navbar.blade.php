@@ -2,7 +2,7 @@
 <div @if ($showShadow)
     class="nav-header nav-header-classic shadow"
 @else
-    class="nav-header nav-header-classic menu-space header-position header-white"
+    class="nav-header nav-header-classic menu-space header-position"
 @endif>
     <div class="container-fluid">
         <div class="row">

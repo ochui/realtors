@@ -96,6 +96,10 @@
     <script src="{{asset('libs/nouislider/distribute/nouislider.min.js') }}"></script>
     <script src="{{asset('libs/wnumb/wNumb.min.js') }}"></script>
 
+    <script src="{{asset('js/map-config.js') }}" type="text/javascript"></script>
+	<script src="{{asset('js/pin-config.js') }}" type="text/javascript"></script>
+	<script src="{{asset('js/map-interact.js') }}" type="text/javascript"</script>
+
 
 
 
