@@ -3,8 +3,7 @@
     <div style=" 
     margin: auto;
     width: 100%;
-    height: 0;
-    padding-bottom: 60%;">
+    padding-bottom: 5%;">
     <img src="/images/states/{{$image}}" alt="" style="width: 100%;
     opacity: 1;">
     </div>
