@@ -28,7 +28,7 @@ Route::get('category/{categoryId}', 'CategoryController@show')->name('get-catego
 
 Route::view('pages/about', 'frontend.pages.about')->name('page.about');
 
-Route::get('{service}/{location}', 'ListingController@index');
+// Route::get('{service}/{location}', 'ListingController@index');
 
 Route::get('alabama', 'ListingController@stateListing');
 Route::get('alaska', 'ListingController@stateListing');

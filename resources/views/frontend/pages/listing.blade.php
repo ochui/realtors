@@ -3,11 +3,11 @@
     <div style=" 
     margin: auto;
     width: 100%;
-    padding-bottom: 5%;">
-    <img src="/images/states/{{$image}}" alt="" style="width: 100%;
-    opacity: 1;">
+    padding-bottom: 2%;
+    ">
+    <img src="/images/states/{{$image}}" alt="" style="width: 100%;">
     </div>
-    <div class="py-6 py-lg-8 ">
+    <div class="py-2 py-lg-4 ">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-md-8  col-12">
@@ -15,8 +15,8 @@
                     <!-- breadcrumb -->
                     <nav aria-label="breadcrumb" class="mt-5">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Listing List View</li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active">{{$city}}</li>
                         </ol>
                     </nav>
                 </div>
