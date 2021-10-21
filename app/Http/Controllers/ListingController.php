@@ -9,11 +9,11 @@ class ListingController extends Controller {
 
         if ( strpos( $request->location, '-' ) !== false ) {
             $city = ucwords( implode( ' ', explode( '-', $request->location ) ) );
-            $image = str_replace( ' ', '-', $city.'.jpg' );
+            $image = str_replace( ' ', '-', $city.'.png' );
 
         } else {
             $city = ucwords( $request->location );
-            $image = $city.'.jpg';
+            $image = $city.'.png';
 
         }
 
@@ -26,11 +26,11 @@ class ListingController extends Controller {
 
         if ( strpos( $request->path(), '-' ) !== false ) {
             $city = ucwords( implode( ' ', explode( '-', $request->path() ) ) );
-            $image = str_replace( ' ', '-', $city.'.jpg' );
+            $image = str_replace( ' ', '-', $city.'.png' );
 
         } else {
             $city = ucwords( $request->path() );
-            $image = $city.'.jpg';
+            $image = $city.'.png';
 
         }
 

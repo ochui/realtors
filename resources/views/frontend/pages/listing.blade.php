@@ -4,6 +4,7 @@
     margin: auto;
     width: 100%;
     padding-bottom: 2%;
+    background-color: #6c4af27a;
     ">
     <img src="/images/states/{{$image}}" alt="" style="width: 100%;">
     </div>
@@ -30,14 +31,15 @@
                 
                 <div class="col-lg-12 col-md-8 col-12 mx-auto">
                     <div class="row mb-4">
-                        <div class="col-md-3 col-8">
+                        <div class="col-md-3 col-12">
                             <div class="sorting">
                                 <!-- select form -->
                                 <select class="select2">
-                                    <option selected>Default</option>
-                                    <option value="1">Most Viewed</option>
-                                    <option value="2">Newest Listing</option>
-                                    <option value="3">Older Listing</option>
+                                    <option selected>What are you looking for..?</option>
+                                    <option value="1">Realtors</option>
+                                    <option value="2">Appraiser</option>
+                                    <option value="3">Inspector</option>
+                                    <option value="3">Attornies</option>
                                 </select>
                             </div>
                             <!-- select form -->
@@ -78,7 +80,7 @@
                                             </a>
                                         </div>
                                         <div class="btn-wishlist"></div>
-                                        <span class="badge bg-danger position-absolute start-0 ms-3 mt-3 top-0 z-1">Featured</span>
+                                        {{-- <span class="badge bg-danger position-absolute start-0 ms-3 mt-3 top-0 z-1">Featured</span> --}}
                                     </div>
                                 </div>
                                 <div class="col-md-5 col-12">
