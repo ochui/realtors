@@ -3,7 +3,6 @@
     <div style=" 
     margin: auto;
     width: 100%;
-    padding-bottom: 2%;
     background-color: #6c4af27a;
     ">
     <img src="/images/states/{{$image}}" alt="" style="width: 100%;">
